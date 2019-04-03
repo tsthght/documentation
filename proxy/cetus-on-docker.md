@@ -1,4 +1,4 @@
-### Mac上搭建Cetus测试环境
+### Docker上搭建Cetus测试环境
 
 #### 1 Docker的安装与运行
 下载Docker的安装文件[Docker.dmg](https://docs.docker.com/docker-for-mac/install/)，下载到本地后，双击该文件进行安装。
