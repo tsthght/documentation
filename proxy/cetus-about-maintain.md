@@ -44,6 +44,8 @@ show variables like '%default-maintained-client-idle-timeout%'
 
 2 该参数是**不会保存到配置文件**的，重启后，改参数会变成默认值`false`
 
+3 该功能只有**配合LVS才有实际意义**
+
 - 的使用场景
 
 该功能配合LVS使用，在Cetus升级等情况下需要从LV上中下线Cetus时，会通过该功能，加速客户端到Cetus的连接的关闭速度。
