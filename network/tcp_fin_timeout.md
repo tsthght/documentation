@@ -6,7 +6,7 @@
 
 ![tft1.png](./images/tft1.png)
 
-乍一看截图，TLS协议，心中有数，肯定是后端MySQL使用了SSL加密。随后看到客户端一个小时左右没有发送新数据，Server端发送了`FIN`数据包，断开了连接。这现象应该是 客户端空闲连接触发了MySQL设置的`interactive_timeout`阈值。分析道这里，感觉自己可以做实验模拟下。然后就模拟了下，实验截图如下。
+乍一看截图，TLS协议，心中有数，后端MySQL使用了SSL加密，稳了。随后看到客户端一个小时左右没有发送新数据，Server端发送了`FIN`数据包，断开了连接。这现象应该是 客户端空闲连接触发了MySQL设置的`interactive_timeout`阈值。分析道这里，感觉自己可以做实验模拟下。然后就模拟了下，实验截图如下。
 
 ![tft2.png](./images/tft2.png)
 
